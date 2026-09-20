@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "project": "tooki",
+  "components": [
+    {
+      "name": "main",
+      "path": ".",
+      "kind": "job",
+      "runtime": "maven",
+      "build": {
+        "command": "/var/jenkins_home/tools/apache-maven/bin/mvn -B clean verify"
+      },
+      "command": "./run.sh"
+    }
+  ]
+}
